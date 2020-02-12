@@ -10,7 +10,7 @@ const config = require("./webpack.config.js")
 const compiler = webpack(config)
 app.use(
   webpackDevMiddleware(compiler, {
-    publicPath: "/"
+    publicPath: "/dist"
   })
 )
 app.use(webpackHotMiddleware(compiler))
@@ -21,7 +21,7 @@ app.get("*", (req, res) => {
     <head></head>
     <body>
       <div id="root"></div>
-      <script src="/bundle.js"></script>
+      <script src="/dist/bundle.js"></script>
     </body>
     </html>
   `)
