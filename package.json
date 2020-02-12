@@ -1,0 +1,16 @@
+{
+  "name": "webpack-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "express": "^4.17.1",
+    "webpack": "^4.41.6",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  }
+}
